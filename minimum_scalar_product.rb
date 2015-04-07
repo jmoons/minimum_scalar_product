@@ -6,7 +6,7 @@ class MinimumScalarProduct
     @largest_sum  = nil
   end
   def run
-    @vector1.permutation.to_a.each do |vector1_permutation|
+    @vector1.permutation.each do |vector1_permutation|
       test_permutation(vector1_permutation)
     end
     puts "DONE: #{@smallest_sum.inspect}"
